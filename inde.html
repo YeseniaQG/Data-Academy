@@ -1,1 +1,473 @@
-<p>Hola desde github</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Yesenia Quiroz Java Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --dark: #1e1e2f;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6fb;
+      color: #333;
+    }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      background-color: var(--dark);
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover {
+      color: var(--primary) !important;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #3a3a6e 100%);
+      color: #fff;
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+    #hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    #hero p.lead {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── SECTION TITLES ── */
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 0.4rem;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 2px;
+      margin-top: 6px;
+    }
+
+    /* ── CARDS ── */
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    }
+    .card-header-custom {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 12px 12px 0 0 !important;
+      padding: 0.8rem 1.2rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    /* ── BADGES ── */
+    .badge-tag {
+      background-color: #ece9ff;
+      color: var(--primary);
+      font-weight: 500;
+      padding: 0.4em 0.8em;
+      border-radius: 20px;
+      font-size: 0.82rem;
+    }
+
+    /* ── PROYECTO FINAL ── */
+    #proyecto .highlight-card {
+      background: linear-gradient(135deg, var(--primary), #9c88ff);
+      color: #fff;
+      border-radius: 16px;
+      padding: 2.5rem;
+    }
+    #proyecto .highlight-card a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background-color: var(--dark);
+      color: #aaa;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+
+    section { padding: 70px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">
+        <i class="bi bi-code-slash me-1"></i> Yesenia Quiroz
+        <span class="badge bg-primary ms-1" style="font-size:.65rem">Java Developer</span>
+      </a>
+      <button class="navbar-toggler border-secondary" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#descripcion">Descripción</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tareas">Tareas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ejercicios">Ejercicios en Clase</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto Final</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════
+       1 · HERO / NOMBRE
+  ════════════════════════════════ -->
+  <section id="hero">
+    <div class="container">
+      <!-- Reemplaza el src con tu foto -->
+      <img src="https://ui-avatars.com/api/?name=Yesenia+Quiroz&size=140&background=6c63ff&color=fff&bold=true"
+           alt="Foto de perfil" class="avatar" />
+      <h1>Yesenia Quiroz</h1>
+      <p class="lead">☕ Java Developer · Portafolio Académico</p>
+      <a href="#descripcion" class="btn btn-light btn-lg px-4">
+        <i class="bi bi-chevron-down me-1"></i> Ver más
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       2 · DESCRIPCIÓN
+  ════════════════════════════════ -->
+  <section id="descripcion" class="bg-white">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6">
+          <h2 class="section-title">Sobre mí</h2>
+          <p class="mt-3 fs-5 text-muted">
+            Hola, soy <strong>Yesenia Quiroz</strong>, Java Developer.
+            tareas y proyectos desarrollados a lo largo del curso. Me apasiona el aprendizaje
+            continuo y la resolución de problemas mediante la tecnología.
+          </p>
+          <p class="text-muted">
+            <!-- Agrega aquí más información personal, carrera, semestre, etc. -->
+            Estudiante comprometida con el desarrollo de habilidades técnicas y creativas.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-3 text-center">
+            <div class="col-6">
+              <div class="card p-4">
+                <i class="bi bi-journal-check fs-1 text-primary mb-2"></i>
+                <h5 class="fw-bold">Tareas</h5>
+                <p class="text-muted mb-0 small">Actividades asignadas</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card p-4">
+                <i class="bi bi-laptop fs-1 text-primary mb-2"></i>
+                <h5 class="fw-bold">Ejercicios</h5>
+                <p class="text-muted mb-0 small">Práctica en clase</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card p-4">
+                <i class="bi bi-trophy fs-1 text-primary mb-2"></i>
+                <h5 class="fw-bold">Proyecto Final</h5>
+                <p class="text-muted mb-0 small">Trabajo integrador</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card p-4">
+                <i class="bi bi-star fs-1 text-primary mb-2"></i>
+                <h5 class="fw-bold">Logros</h5>
+                <p class="text-muted mb-0 small">Aprendizaje continuo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       3 · TAREAS
+  ════════════════════════════════ -->
+  <section id="tareas">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title mx-auto">Tareas</h2>
+        <p class="text-muted mt-3">Actividades y trabajos asignados durante el curso</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Tarea 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-header-custom">
+              <i class="bi bi-file-earmark-text me-1"></i> Tarea 1
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Título de la tarea</h5>
+              <p class="card-text text-muted small">
+                Descripción breve de los objetivos y lo que se realizó en esta tarea.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mt-2">
+                <span class="badge-tag">Tema 1</span>
+                <span class="badge-tag">HTML</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <a href="#" class="btn btn-sm btn-outline-primary">
+                <i class="bi bi-eye me-1"></i>Ver tarea
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarea 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-header-custom">
+              <i class="bi bi-file-earmark-text me-1"></i> Tarea 2
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Título de la tarea</h5>
+              <p class="card-text text-muted small">
+                Descripción breve de los objetivos y lo que se realizó en esta tarea.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mt-2">
+                <span class="badge-tag">CSS</span>
+                <span class="badge-tag">Bootstrap</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <a href="#" class="btn btn-sm btn-outline-primary">
+                <i class="bi bi-eye me-1"></i>Ver tarea
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarea 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-header-custom">
+              <i class="bi bi-file-earmark-text me-1"></i> Tarea 3
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Título de la tarea</h5>
+              <p class="card-text text-muted small">
+                Descripción breve de los objetivos y lo que se realizó en esta tarea.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mt-2">
+                <span class="badge-tag">JavaScript</span>
+                <span class="badge-tag">DOM</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <a href="#" class="btn btn-sm btn-outline-primary">
+                <i class="bi bi-eye me-1"></i>Ver tarea
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       4 · EJERCICIOS EN CLASE
+  ════════════════════════════════ -->
+  <section id="ejercicios" class="bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title mx-auto">Ejercicios en Clase</h2>
+        <p class="text-muted mt-3">Prácticas y ejercicios realizados durante las sesiones</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Ejercicio 1 -->
+        <div class="col-md-6">
+          <div class="card h-100 flex-row align-items-center p-3 gap-3">
+            <div class="text-center" style="min-width:60px">
+              <div class="rounded-circle d-flex align-items-center justify-content-center text-white fw-bold"
+                   style="width:52px;height:52px;background:var(--primary);font-size:1.2rem">1</div>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Ejercicio de Clase 1</h5>
+              <p class="text-muted small mb-2">Descripción del ejercicio y herramientas utilizadas.</p>
+              <span class="badge-tag">Tema</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline-primary ms-auto">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="col-md-6">
+          <div class="card h-100 flex-row align-items-center p-3 gap-3">
+            <div class="text-center" style="min-width:60px">
+              <div class="rounded-circle d-flex align-items-center justify-content-center text-white fw-bold"
+                   style="width:52px;height:52px;background:var(--primary);font-size:1.2rem">2</div>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Ejercicio de Clase 2</h5>
+              <p class="text-muted small mb-2">Descripción del ejercicio y herramientas utilizadas.</p>
+              <span class="badge-tag">Tema</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline-primary ms-auto">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Ejercicio 3 -->
+        <div class="col-md-6">
+          <div class="card h-100 flex-row align-items-center p-3 gap-3">
+            <div class="text-center" style="min-width:60px">
+              <div class="rounded-circle d-flex align-items-center justify-content-center text-white fw-bold"
+                   style="width:52px;height:52px;background:var(--primary);font-size:1.2rem">3</div>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Ejercicio de Clase 3</h5>
+              <p class="text-muted small mb-2">Descripción del ejercicio y herramientas utilizadas.</p>
+              <span class="badge-tag">Tema</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline-primary ms-auto">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Ejercicio 4 -->
+        <div class="col-md-6">
+          <div class="card h-100 flex-row align-items-center p-3 gap-3">
+            <div class="text-center" style="min-width:60px">
+              <div class="rounded-circle d-flex align-items-center justify-content-center text-white fw-bold"
+                   style="width:52px;height:52px;background:var(--primary);font-size:1.2rem">4</div>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Ejercicio de Clase 4</h5>
+              <p class="text-muted small mb-2">Descripción del ejercicio y herramientas utilizadas.</p>
+              <span class="badge-tag">Tema</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline-primary ms-auto">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       5 · PROYECTO FINAL
+  ════════════════════════════════ -->
+  <section id="proyecto">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title mx-auto">Proyecto Final</h2>
+        <p class="text-muted mt-3">Trabajo integrador del curso</p>
+      </div>
+      <div class="highlight-card">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge bg-white text-primary fw-bold mb-3">Proyecto Final</span>
+            <h3 class="fw-bold mb-3">Nombre del Proyecto</h3>
+            <p class="mb-4" style="opacity:.9">
+              Descripción detallada del proyecto final: qué problema resuelve, tecnologías
+              utilizadas, metodología aplicada y resultados obtenidos. Este proyecto
+              representa el aprendizaje integral del curso.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="badge bg-white text-primary px-3 py-2">HTML5</span>
+              <span class="badge bg-white text-primary px-3 py-2">CSS3</span>
+              <span class="badge bg-white text-primary px-3 py-2">JavaScript</span>
+              <span class="badge bg-white text-primary px-3 py-2">Bootstrap</span>
+            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#" class="btn btn-light btn-lg px-4">
+                <i class="bi bi-globe me-2"></i>Ver proyecto
+              </a>
+              <a href="#" class="btn btn-outline-light btn-lg px-4">
+                <i class="bi bi-github me-2"></i>Código fuente
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <i class="bi bi-laptop" style="font-size:9rem;opacity:.3"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer>
+    <p class="mb-1">© 2026 <strong>Yesenia Quiroz Java Developer</strong> · Portafolio Académico</p>
+    <p class="mb-0">Hecho con <i class="bi bi-heart-fill text-danger"></i> y Bootstrap 5</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Smooth scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
