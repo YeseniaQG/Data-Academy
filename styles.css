@@ -1,0 +1,120 @@
+:root {
+  --primary: #6c63ff;
+  --dark: #1e1e2f;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fb;
+  color: #333;
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  background-color: var(--dark);
+}
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* ── HERO ── */
+#hero {
+  background: linear-gradient(135deg, var(--dark) 0%, #3a3a6e 100%);
+  color: #fff;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+#hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#hero p.lead {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+/* ── SECTION TITLES ── */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* ── CARDS ── */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform .2s, box-shadow .2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+.card-header-custom {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ── BADGES ── */
+.badge-tag {
+  background-color: #ece9ff;
+  color: var(--primary);
+  font-weight: 500;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  font-size: 0.82rem;
+}
+
+/* ── PROYECTO FINAL ── */
+#proyecto .highlight-card {
+  background: linear-gradient(135deg, var(--primary), #9c88ff);
+  color: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+}
+#proyecto .highlight-card a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: var(--dark);
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+footer a { color: var(--primary); text-decoration: none; }
+
+section { padding: 70px 0; }
