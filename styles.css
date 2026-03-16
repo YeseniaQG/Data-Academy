@@ -107,6 +107,23 @@ body {
   text-decoration: underline;
 }
 
+/* ── CERTIFICACIONES ── */
+#certificaciones .cert-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+#certificaciones .cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+#certificaciones .cert-card img {
+  width: 100%;
+  height: auto;
+}
+
 /* ── FOOTER ── */
 footer {
   background-color: var(--dark);
