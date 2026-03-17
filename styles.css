@@ -135,3 +135,25 @@ footer {
 footer a { color: var(--primary); text-decoration: none; }
 
 section { padding: 70px 0; }
+
+/* ── TECNOLOGÍAS ── */
+.tech-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform .3s, box-shadow .3s;
+  cursor: default;
+}
+.tech-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(108,99,255,0.18);
+}
+.tech-icon {
+  width: 56px;
+  height: 56px;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
+  transition: transform .3s;
+}
+.tech-card:hover .tech-icon {
+  transform: scale(1.15);
+}
